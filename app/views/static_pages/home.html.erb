@@ -1,0 +1,15 @@
+<div id="home-back">
+  <div class="jumbotron">
+    <h1>
+      Welcome to Beer Genius! Enter a beer you love below to find more beers like it.
+    </h1>
+  </div>
+</div>
+
+<div class = "search-form">
+  <%= form_tag("/search", method: "get") do %>
+    <%= label_tag(:q, "Search for:") %>
+    <%= text_field_tag(:q) %>
+    <%= submit_tag("Search") %>
+  <% end %>
+</div>
